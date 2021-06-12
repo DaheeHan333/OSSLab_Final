@@ -66,5 +66,7 @@ Thanks for visiting me !
 <br>All c program were coded by myself, no copied sources were used in this project</br>
 <br>if the hyperlink doesn't work - type in youtube.com/watch?v=lh3qTTqlZOY
 
+## References 
+* HTML template <https://www.w3schools.com/w3css/w3css_templates.asp>
 
 
