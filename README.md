@@ -71,9 +71,7 @@ Dahee Han : 21700765@handong.edu
 
 Thanks for visiting me ! 
 ## VIDEO PRESENTATION LINK HERE!
-<br><a href = "https://www.youtube.com/watch?v=lh3qTTqlZOY">Youtube video link click here!</a></br>
-<br>All c program were coded by myself, no copied sources were used in this project</br>
-<br>if the hyperlink doesn't work - type in youtube.com/watch?v=lh3qTTqlZOY
+<br><a href = "https://www.youtube.com/watch?v=BiY8tvfTuVw">Youtube video link click here!</a></br>
 
 ## References 
 * HTML template <https://www.w3schools.com/w3css/w3css_templates.asp>
