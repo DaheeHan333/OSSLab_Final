@@ -50,7 +50,8 @@ It is very simple.
 3. Type "raspberrypi.local" on the web browser.
 4. You would see main page.
 
-<img width="700" alt="스크린샷 2021-06-12 오후 1 53 39" src="https://user-images.githubusercontent.com/74919266/121765421-a7215300-cb85-11eb-95be-70b7317f108d.png">
+<img width="700" alt="스크린샷 2021-06-12 오후 4 05 24" src="https://user-images.githubusercontent.com/74919266/121768217-08eab880-cb98-11eb-9295-aa42b16fe3be.png">
+
 5. You can move by scrolling down or choosing menu bar on the left side. 
 
 <img width="700" alt="스크린샷 2021-06-12 오후 1 55 15" src="https://user-images.githubusercontent.com/74919266/121765447-d46e0100-cb85-11eb-82c4-98fab4a0a535.png">
