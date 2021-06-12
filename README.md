@@ -1,5 +1,5 @@
 # OSSLab_Final
-### "Visuallization of sorting algorithms" Web Site. 
+### "Visualization of sorting algorithms" Web Site. 
 made by Dahee Han 21700765.
 
 ## Welcome to Final Project For OSS Lab!
@@ -13,14 +13,14 @@ I used the template on w3shcools.com.
 
 ## What does this project do?
 
-"Visuallization of sorting algorithms" is a web site where you can see animted process of six types of sorting algorithms with pseudocode. 
+"Visualization of sorting algorithms" is a web site where you can see animted process of six types of sorting algorithms with pseudocode. 
 
 
 I developted the server with ngix
 This web site made of HTML, CSS, Java Script language.
 
 This project offers :
-1. a visuallization of sorting process : bubble-sort, selection-sort, insertion-sort, merge-sort, quick-sort, heap-sort
+1. a visualization of sorting process : bubble-sort, selection-sort, insertion-sort, merge-sort, quick-sort, heap-sort
 3. pseuocode of each algorithms
 4. some quiz about six algorithms
 
