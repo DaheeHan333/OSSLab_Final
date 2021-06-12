@@ -24,14 +24,17 @@ This project offers :
 In this project, raspberrypi will be used, so you can simply access the web site through web browser.
 
 ## Why is this project useful?
-***
+
 <img width="700" alt="스크린샷 2021-06-12 오후 1 33 20" src="https://user-images.githubusercontent.com/74919266/121765021-0b8ee300-cb83-11eb-9428-85d9a49665f7.png">
-***
 
 I found a very useful web-site that shows the process of B+trees while I was studying Database course.
+
 I could see the whole process by inserting and deleting node that I want to on this web-site. It was very helpful for me.
+
 Therefore, I wanted to develop something about sorting alorithms since sometimes they confused me. 
+
 That was the reason why I chose this topic and developed this web site.
+
 You can see an normal process of each of them at once.
 
 
