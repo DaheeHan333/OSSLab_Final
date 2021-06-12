@@ -1,5 +1,5 @@
 # OSSLab_Final
-### "Visualization of sorting algorithms" Web Site. 
+### "Visualization of Sorting Algorithms" Web Site. 
 made by Dahee Han 21700765.
 
 ## Welcome to Final Project For OSS Lab!
