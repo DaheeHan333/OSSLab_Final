@@ -15,7 +15,9 @@ I used the template on w3shcools.com.
 
 "Visuallization of sorting algorithms" is a web site where you can see animted process of six types of sorting algorithms with pseudocode. 
 
-This web site made of HTML, Java Script language.
+
+I developted the server with ngix
+This web site made of HTML, CSS, Java Script language.
 
 This project offers :
 1. a visuallization of sorting process : bubble-sort, selection-sort, insertion-sort, merge-sort, quick-sort, heap-sort
