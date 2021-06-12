@@ -4,9 +4,7 @@ made by Dahee Han 21700765.
 
 ## Welcome to Final Project For OSS Lab!
 This project is for final project for OSS-Lab session at Handong Global University.
-
 Please feel free to look to the source codes if you need it.
-
 I used the template on w3shcools.com.
 
 
