@@ -14,12 +14,13 @@ I used the template on w3shcools.com.
 ## What does this project do?
 
 "Visuallization of sorting algorithms" is a web site where you can see animted process of six types of sorting algorithms with pseudocode. 
+
 This web site made of HTML, Java Script language.
 
 This project offers :
 1. a visuallization of sorting process : bubble-sort, selection-sort, insertion-sort, merge-sort, quick-sort, heap-sort
-2. pseuocode of each algorithms
-3. some quiz about six algorithms
+3. pseuocode of each algorithms
+4. some quiz about six algorithms
 
 In this project, raspberrypi will be used, so you can simply access the web site through web browser.
 
