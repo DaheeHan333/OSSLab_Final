@@ -68,5 +68,7 @@ Thanks for visiting me !
 
 ## References 
 * HTML template <https://www.w3schools.com/w3css/w3css_templates.asp>
-
+* GIF file <https://jinhyy.tistory.com/9>
+* GIF file <https://commons.wikimedia.org/wiki/File:Heap_sort_example.gif>
+* IMG file <https://brilliant.org/wiki/sorting-algorithms/>
 
