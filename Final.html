@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>OSSLab_Final_Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><h3 class="w3-padding-64"><b>OSSLab<br>Project</b></h3></a>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#bubble" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bubble Sort</a> 
+    <a href="#selection" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Selction Sort</a> 
+    <a href="#insertion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Insertion Sort</a> 
+    <a href="#merge" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Merge Sort</a> 
+    <a href="#quick" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Quick Sort</a> 
+    <a href="#heap" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Heap Sort</a>
+    <a href="#quiz" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Quiz Time!</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>OSSLab_Project</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Visualization of Sorting Algorithms</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>with Pseudocode</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <div class="w3-introduction"style="margin-top:75px">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbVRFVk%2FbtqTp16SzI4%2Fpjo17IztxaH05mqvxkrr0k%2Fimg.jpg" style="width:80%">
+  	<br><br><br>
+    <h4>Hi, there ! This is very simple page of showing six types of sorting algorithm </h4>
+    <h4>; Bubble, Selection, Insertion, Merge, Quick, Heap </h4>
+    <h4>I'm going to give you an animated GIF and pseudocode for each of them. </h4>
+  </div>
+  
+  
+    <!-- bubble -->
+  <div class="w3-container" id="bubble" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Bubble Sort</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="https://cdn-images-1.medium.com/max/1600/1*ZQmdM7My9QIhvxj98hrweg.gif" style="width:80%">
+   
+    <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - bubble sort</li>
+        <li class="w3-padding-16">BubbleSort(A[], N)</li>
+        <li class="w3-padding-16">for i=1 to N-1</li>
+        <li class="w3-padding-16">for j=1 to N-i</li>
+        <li class="w3-padding-16">if(Arr[j] > Arr[j+1]) then</li>
+        <li class="w3-padding-16">interchange (Arr[j], Arr[j+1]</li>
+        <li class="w3-padding-16">end for</li>
+        <li class="w3-padding-16">end for</li>
+      </ul>
+    </div>
+</div>
+  
+    <!-- selection -->
+  <div class="w3-container" id="selection" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Selection Sort</b></h1>
+    <img src="https://cdn-images-1.medium.com/max/1600/1*to7gYwi5_bkZhx-1kSB0Lg.gif" style="width:80%">
+    <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - selection sort</li>
+        <li class="w3-padding-16">SelectionSort(A[], N)</li>
+        <li class="w3-padding-16">for i=1 to N-1</li>
+        <li class="w3-padding-16">min = i</li>
+        <li class="w3-padding-16">for j=i+1 to N</li>
+        <li class="w3-padding-16">if A[j] < A[min] then </li>
+        <li class="w3-padding-16">min = j</li>
+        <li class="w3-padding-16">end for</li>
+        <li class="w3-padding-16">if min!=i then interchange A[i] and A[min] </li>
+        <li class="w3-padding-16">end for</li>
+      </ul>
+    </div>
+</div>
+  
+
+  <!-- insertion -->
+  <div class="w3-container" id="insertion" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Insertion Sort</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="https://cdn-images-1.medium.com/max/1600/1*IK3Q4NBRLthllMINV3OxpQ.gif" style="width:80%">
+    <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - insertion sort</li>
+        <li class="w3-padding-16">InsertionSort(A)</li>
+        <li class="w3-padding-16">for j=2 to A.length</li>
+        <li class="w3-padding-16">key = A[j]</li>
+        <li class="w3-padding-16">while j > 0 and A[i] > key</li>
+        <li class="w3-padding-16">A[i+1] = A[i]</li>
+        <li class="w3-padding-16">i = i-1</li>
+        <li class="w3-padding-16">A[i+1] = key</li>
+        <li class="w3-padding-16">end for</li>
+      </ul>
+    </div>
+</div>
+  
+  <!-- merge -->
+  <div class="w3-container" id="merge" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Merge Sort</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="https://cdn-images-1.medium.com/max/1600/1*Uvs7CK1oew0pVckcuxr_qA.gif" style="width:80%">
+    <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - merge sort</li>
+        <li class="w3-padding-16">MergeSort(A,p,r)</li>
+        <li class="w3-padding-16">if p < r </li>
+        <li class="w3-padding-16">q = (p+r)/2</li>
+        <li class="w3-padding-16">MergeSort(A,p,q)</li>
+        <li class="w3-padding-16">MergeSort(A,q+1,r</li>
+        <li class="w3-padding-16">Merge(A,p,q,r)</li>
+      </ul>
+    </div>
+    
+     <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - merge sort</li>
+        <li class="w3-padding-16">Merge(A,p,q,r)</li>
+        <li class="w3-padding-16">n1 = q-p+1</li>
+        <li class="w3-padding-16">n2 = r-q</li>
+        <li class="w3-padding-16">let L[1..n1+1] and R[1..n2+1] be new arrays</li>
+        <li class="w3-padding-16">for i=1 to n1</li>
+        <li class="w3-padding-16">L[i] = A[p+i-1]</li>
+        <li class="w3-padding-16">for j=1 to n2</li>
+        <li class="w3-padding-16">R[j] = A[q+j]</li>
+        <li class="w3-padding-16">L[n1+1] = INF</li>
+        <li class="w3-padding-16">i = 1</li>
+        <li class="w3-padding-16">j = 1</li>
+        <li class="w3-padding-16">for k=p to r</li>
+        <li class="w3-padding-16">if L[i] <= R[j]</li>
+        <li class="w3-padding-16">A[k] = L[i]</li>
+        <li class="w3-padding-16">i = i+1</li>
+        <li class="w3-padding-16">else A[k] = R[j]</li>
+        <li class="w3-padding-16">j = j+1</li>
+      </ul>
+    </div>
+</div>
+
+  <!-- quick-->
+ <div class="w3-container" id="quick" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Quick Sort</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="https://cdn-images-1.medium.com/max/1600/1*wwCw5TzLd79k2WQ6YVsQVw.gif" style="width:80%">
+       <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - quick sort</li>
+        <li class="w3-padding-16">QuickSort(A,p,r)</li>
+        <li class="w3-padding-16">if p < r</li>
+        <li class="w3-padding-16">q = PARTITION(A,p,r)</li>
+        <li class="w3-padding-16">QuickSort(A,p,q-1)</li>
+        <li class="w3-padding-16">QuickSort(A,q+1,r)</li>
+      </ul>
+    </div>
+    
+     <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - quick sort</li>
+        <li class="w3-padding-16">Partition(A,p,r)</li>
+        <li class="w3-padding-16">x = A[r]</li>
+        <li class="w3-padding-16">i = p-1</li>
+        <li class="w3-padding-16">for j=p to r-1</li>
+        <li class="w3-padding-16">if A[j] <= x</li>
+        <li class="w3-padding-16">i = i+1</li>
+        <li class="w3-padding-16">exchange A[i] with A[j]</li>
+        <li class="w3-padding-16">exchange A[i+1] with A[r]</li>
+        <li class="w3-padding-16">return i+1</li>
+      </ul>
+    </div>
+    
+</div>
+
+  
+  
+    <!-- heap-->
+   <div class="w3-container" id="heap" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Heap Sort</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Heap_sort_example.gif" style="width:80%">
+    
+     <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - heap sort</li>
+        <li class="w3-padding-16">HeapSort(A)</li>
+        <li class="w3-padding-16">BuildHeap(A)</li>
+        <li class="w3-padding-16">for i=A.length to 2</li>
+        <li class="w3-padding-16">exchange A[1] with A[i]</li>
+        <li class="w3-padding-16">heapsize = heapsize - 1</li>
+        <li class="w3-padding-16">Heapify(A,1)</li>
+      </ul>
+    </div>
+    
+         <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - heap sort</li>
+        <li class="w3-padding-16">BuildHeap(A)</li>
+        <li class="w3-padding-16">heapsize = A.length</li>
+        <li class="w3-padding-16">for i=floor(length/2) to 1</li>
+        <li class="w3-padding-16">Heapify(A,i)</li>
+      </ul>
+    </div>
+    
+         <div class="w3-half w3-margin-bottom" style="width:80%" >
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-padding-16">Pseudocode - heap sort</li>
+        <li class="w3-padding-16">Heapify(A,i)</li>
+        <li class="w3-padding-16">le = i.left</li>
+        <li class="w3-padding-16">ri = i.right</li>
+        <li class="w3-padding-16">if (le<=heapsize) and (A[le]>A[i])</li>
+        <li class="w3-padding-16">largest = le</li>
+        <li class="w3-padding-16">else </li>
+        <li class="w3-padding-16">largest = i </li>
+        <li class="w3-padding-16">if (ri=heapsize) and (A[ri] > A[largest]) </li>
+        <li class="w3-padding-16">largest = ri </li>
+        <li class="w3-padding-16">if largest != i </li>
+        <li class="w3-padding-16">exchange A[i] with A[largest]</li>
+        <li class="w3-padding-16">Heapify(A, largest) </li>
+      </ul>
+    </div>
+</div>
+
+
+    <!-- quiz -->
+    <div class="w3-container" id="quiz" style="margin-top:75px">
+
+    <h1 class="w3-xxxlarge w3-text-red"><b>Guess what the answer is !</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+  <div class="bubble-quiz">
+ <h1> 1. Bubble Sort (average case) </h1>
+ <form name="form1">
+ <font size="5em">
+  <input type="radio" name="timeComp1" value="v1"> &#920;(n^2)<br>
+  <input type="radio" name="timeComp1" value="v2"> &#920;(n*lgn)<br>
+  <input type="radio" name="timeComp1" value="v3"> &#920;(2n)<br>
+  <input type="radio" name="timeComp1" value="v4"> &#920;(n!)<br>
+  <input type="button" name="선택" value="Result" style="margin-top : 15px"  onclick="myFucntion1()">
+  </font>
+ </form>
+ <font size="5em"><p id="check"></p></font
+  <script type="text/javascript">
+  function myFucntion1() {
+   if(form1.timeComp1[0].checked==true) document.getElementById("check").innerHTML="Correct Answer!";
+   else document.getElementById("check").innerHTML="Wrong Answer";
+  }
+ </script>
+  </div>
+  
+  
+ <div class="selection-quiz">
+ <h1> 2. Selection Sort (average case) </h1>
+ <form name="form2">
+ <font size="5em">
+  <input type="radio" name="timeComp2" value="v1"> &#920;(2n)<br>
+  <input type="radio" name="timeComp2" value="v2"> &#920;(n*lgn)<br>
+  <input type="radio" name="timeComp2" value="v3"> &#920;(n^3)<br>
+  <input type="radio" name="timeComp2" value="v4"> &#920;(n^2)<br>
+  <input type="button" name="선택" value="Result" style="margin-top : 15px"  onclick="myFucntion2()">
+  </font>
+ </form>
+ 
+ <font size="5em"><p id="check2"></p></font> 
+  <script type="text/javascript">
+  function myFucntion2() {
+   if(form2.timeComp2[3].checked==true) document.getElementById("check2").innerHTML="Correct Answer!";
+   else document.getElementById("check2").innerHTML="Wrong Answer";
+  }
+ </script>
+  </div>
+ 
+ 
+   <div class="insertion-quiz">
+ <h1> 3. Insertion Sort (average case) </h1>
+ <form name="form3">
+ <font size="5em">
+  <input type="radio" name="timeComp3" value="v1"> &#920;(n^2)<br>
+  <input type="radio" name="timeComp3" value="v2"> &#920;(n*lgn)<br>
+  <input type="radio" name="timeComp3" value="v3"> &#920;(2n)<br>
+  <input type="radio" name="timeComp3" value="v4"> &#920;(n!)<br>
+  <input type="button" name="선택" value="Result" style="margin-top : 15px"  onclick="myFucntion3()">
+  </font>
+ </form>
+ <font size="5em"><p id="check3"></p></font>
+  <script type="text/javascript">
+  function myFucntion3() {
+   if(form3.timeComp3[0].checked==true) document.getElementById("check3").innerHTML="Correct Answer!";
+   else document.getElementById("check3").innerHTML="Wrong Answer";
+  }
+ </script>
+  </div>
+  
+     <div class="merge-quiz">
+ <h1> 4. Merge Sort </h1>
+ <form name="form4">
+ <font size="5em">
+  <input type="radio" name="timeComp4" value="v1"> &#920;(n^2)<br>
+  <input type="radio" name="timeComp4" value="v2"> &#920;(n*lgn)<br>
+  <input type="radio" name="timeComp4" value="v3"> &#920;(n^3)<br>
+  <input type="radio" name="timeComp4" value="v4"> &#920;(n!)<br>
+  <input type="button" name="선택" value="Result" style="margin-top : 15px"  onclick="myFucntion4()">
+  </font>
+ </form>
+ <font size="5em"><p id="check4"></p></font>
+  <script type="text/javascript">
+  function myFucntion4() {
+   if(form4.timeComp4[1].checked==true) document.getElementById("check4").innerHTML="Correct Answer!";
+   else document.getElementById("check4").innerHTML="Wrong Answer";
+  }
+ </script>
+  </div>
+
+ 
+      <div class="quick-quiz">
+ <h1> 5. Quick Sort : approach </h1>
+ <form name="form5">
+ <font size="5em">
+  <input type="radio" name="timeComp5" value="v1"> Greedy <br>
+  <input type="radio" name="timeComp5" value="v2"> Dynamic Programming<br>
+  <input type="radio" name="timeComp5" value="v3"> Divide-and-conquer<br>
+  <input type="button" name="선택" value="Result" style="margin-top : 15px"  onclick="myFucntion5()">
+  </font>
+ </form>
+ <font size="5em"><p id="check5"></p></font>
+  <script type="text/javascript">
+  function myFucntion5() {
+   if(form5.timeComp5[2].checked==true) document.getElementById("check5").innerHTML="Correct Answer!";
+   else document.getElementById("check5").innerHTML="Wrong Answer";
+  }
+ </script>
+  </div>
+ 
+       <div class="heap-quiz">
+ <h1> 6. Heap Sort : Which of the following is NOT related to this? </h1>
+ <form name="form6">
+ <font size="5em">
+  <input type="radio" name="timeComp6" value="v1"> max heap <br>
+  <input type="radio" name="timeComp6" value="v2"> min heap<br>
+  <input type="radio" name="timeComp6" value="v3"> Full Binary Tree<br>
+  <input type="radio" name="timeComp6" value="v4"> &#920;(n*lgn)<br>
+  <input type="button" name="선택" value="Result" style="margin-top : 15px"  onclick="myFucntion6()">
+  </font>
+ </form>
+ <font size="5em"><p id="check6"></p></font>
+  <script type="text/javascript">
+  function myFucntion6() {
+   if(form6.timeComp6[2].checked==true) document.getElementById("check6").innerHTML="Correct Answer!";
+   else document.getElementById("check6").innerHTML="Wrong Answer";
+  }
+ </script>
+  </div>
+ 
+ </div>
+
+
+ 
+
+ 
+
+  
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a><br>source : https://jinhyy.tistory.com/9<br>source : https://commons.wikimedia.org/wiki/File:Heap_sort_example.gif<br> source : https://brilliant.org/wiki/sorting-algorithms/</p><br>
+
+</div>
+
+</body>
+</html>
