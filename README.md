@@ -57,9 +57,9 @@ It is very simple.
 6. It will offer an animated GIF file and pseudocode.
 
 <img width="700" alt="스크린샷 2021-06-12 오후 1 56 51" src="https://user-images.githubusercontent.com/74919266/121765485-0d0dda80-cb86-11eb-9850-ea4c1a416955.png">
-7. Also, you can take a pop quiz and then check the answer.
+7. Also, you can take simple quiz and then check the answer.
 
-<img width="700" alt="스크린샷 2021-06-12 오후 1 58 10" src="https://user-images.githubusercontent.com/74919266/121765509-3c244c00-cb86-11eb-9943-bae571a3c094.png">
+<img width="700" alt="스크린샷 2021-06-12 오후 5 53 48" src="https://user-images.githubusercontent.com/74919266/121770924-34c16a80-cba7-11eb-9c97-a36ef0216df5.png">
 
 
 ## Where can I get more help, if I need it?
