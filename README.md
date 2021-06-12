@@ -47,12 +47,16 @@ It is very simple.
 2. Start a web browser.
 3. Type "raspberrypi.local" on the web browser.
 4. You would see main page.
+
 <img width="700" alt="스크린샷 2021-06-12 오후 1 53 39" src="https://user-images.githubusercontent.com/74919266/121765421-a7215300-cb85-11eb-95be-70b7317f108d.png">
 5. You can move by scrolling down or choosing menu bar on the left side. 
+
 <img width="700" alt="스크린샷 2021-06-12 오후 1 55 15" src="https://user-images.githubusercontent.com/74919266/121765447-d46e0100-cb85-11eb-82c4-98fab4a0a535.png">
 6. It will offer an animated GIF file and pseudocode.
+
 <img width="700" alt="스크린샷 2021-06-12 오후 1 56 51" src="https://user-images.githubusercontent.com/74919266/121765485-0d0dda80-cb86-11eb-9850-ea4c1a416955.png">
 7. Also, you can take a pop quiz and then check the answer.
+
 <img width="700" alt="스크린샷 2021-06-12 오후 1 58 10" src="https://user-images.githubusercontent.com/74919266/121765509-3c244c00-cb86-11eb-9943-bae571a3c094.png">
 
 
