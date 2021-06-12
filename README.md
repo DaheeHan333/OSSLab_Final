@@ -28,7 +28,7 @@ This project offers :
 ## Why is this project useful?
 
 <img width="700" alt="스크린샷 2021-06-12 오후 1 33 20" src="https://user-images.githubusercontent.com/74919266/121765021-0b8ee300-cb83-11eb-9428-85d9a49665f7.png">
-* B+trees <https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html>
+* B+trees :  <https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html>
 
 I found a very useful web-site that shows the process of B+trees while I was studying Database course.
 
