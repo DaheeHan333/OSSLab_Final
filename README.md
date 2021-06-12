@@ -24,7 +24,6 @@ This project offers :
 3. pseuocode of each algorithms
 4. some quiz about six algorithms
 
-In this project, raspberrypi will be used, so you can simply access the web site through web browser.
 
 ## Why is this project useful?
 
