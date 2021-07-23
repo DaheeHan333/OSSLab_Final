@@ -1,4 +1,4 @@
-```cpp: problem1_0716.cpp
+```c++: problem1_0716.cpp
 #include <iostream>
 #include <algorithm>
 #include <vector>
