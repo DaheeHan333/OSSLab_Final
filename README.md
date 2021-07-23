@@ -1,142 +1,81 @@
-```cpp: problem1_0716.cpp
-//problem1_0716.cpp
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <string>
-using namespace std;
+# OSSLab_Final
+### "Visualization of Sorting Algorithms" Web Site. 
+made by Dahee Han 21700765.
 
-int main() {
-	vector<char> v;
-	vector<int>pick;
-	int l, c;
-	cin >> l >> c;
-	for (int i = 0; i < c; i++) {
-		char x;
-		cin >> x;
-		v.push_back(x);
-		pick.push_back(1);
-	}
-	sort(v.begin(), v.end());
-	for (int i = 0; i < l; i++) {
-		pick[i] = 0;
-	}
-	do {
-		string s = "";
-		for (int i = 0; i < c; i++) {
-			if (pick[i] == 0) {
-				s = s + v[i];
-			}
-		}
-		int cnt1 = 0;
-		int cnt2 = 0;
-		for (int i = 0; i < s.size(); i++) {
-			if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
-				cnt1++;
-			else
-				cnt2++;
-		}
-		if (cnt1 < 1 || cnt2 < 2)
-			continue;
-		cout << s <<'\n';
-	} while (next_permutation(pick.begin(), pick.end()));
+## Welcome to Final Project For OSS Lab!
 
-}
-```
+This project is for final project for OSS-Lab session at Handong Global University.
 
-```cpp: problem2_0716.cpp
-//problem2_0716.cpp
-#include<iostream>
-#include<queue>
-#include<vector>
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<algorithm>
+Please feel free to look to the source codes if you need it.
 
-using namespace std;
+I used the template on w3shcools.com.
 
-#define MAX 100001
 
-int N, K;
-bool visit[MAX];
+## What does this project do?
 
-int BFS(int N, int K) {
-	queue<pair <int, int>> que;
-	que.push(make_pair(N, 0));
-	visit[N] = true;
+"Visualization of sorting algorithms" is a web site where you can see animted process of six types of sorting algorithms with pseudocode. 
 
-	while (!que.empty()) {
-		int Line = que.front().first;
-		int time = que.front().second;
-		que.pop();
 
-		if (Line == K)	return time;
+I developted the server with ngix
+This web site made of HTML, CSS, Java Script language.
 
-		if (Line + 1 < MAX && !visit[Line + 1]) {
-			que.push(make_pair(Line + 1, time + 1));
-			visit[Line + 1] = true;
-		}
-		if (Line - 1 >= 0 && !visit[Line - 1]) {
-			que.push(make_pair(Line - 1, time + 1));
-			visit[Line - 1] = true;
-		}
-		if (Line * 2 < MAX && !visit[Line * 2]) {
-			que.push(make_pair(Line * 2, time + 1));
-			visit[Line * 2] = true;
-		}
-	}
-}
+This project offers :
+1. a visualization of sorting process : bubble-sort, selection-sort, insertion-sort, merge-sort, quick-sort, heap-sort
+3. pseuocode of each algorithms
+4. some quiz about six algorithms
 
-int main() {
-	cin >> N >> K;
-	
-	cout << BFS(N, K) << endl;
-	return 0;
-}
 
-```
+## Why is this project useful?
 
-```cpp: problem3_0716.cpp
-//problem3_0716.cpp
-#include <algorithm>
-#include <iostream>
- 
-#define MAX 15+1
- 
-using namespace std;
- 
-int N;
-int time_arr[MAX] = {0};
-int profit_arr[MAX] = {0};
-int max_val = 0 ;
- 
-void solve(int now_day, int now_sum, int added_num){
-    if(now_day == N + 1 ){
-        max_val = max(max_val, now_sum);
-        return ;
-    } 
-    else if (now_day > N + 1){
-        max_val = max(max_val, now_sum-added_num);
-        return ;
-    }
+<img width="700" alt="스크린샷 2021-06-12 오후 1 33 20" src="https://user-images.githubusercontent.com/74919266/121765021-0b8ee300-cb83-11eb-9428-85d9a49665f7.png">
 
-    for ( int i = now_day + time_arr[now_day] ; i <= N + time_arr[now_day] ; i++)
-        solve(i, now_sum + profit_arr[now_day] , profit_arr[now_day]);
-    
-}
- 
-int main(){
-    cin >> N;
-    for ( int i = 1 ; i <= N; i++){
-        cin >> time_arr[i]  >> profit_arr[i] ;
-    }
-    
-    for ( int i = 1 ; i <= N ; i++)
-        solve(i, 0, 0);
-    
-    cout << max_val;
-    return 0;
-}
- 
-```
+I found a very useful web-site that shows the process of B+trees while I was studying Database course.
+
+I could see the whole process by inserting and deleting node that I want to on this web-site. It was very helpful for me.
+
+Therefore, I wanted to develop something about sorting alorithms since sometimes they confused me. 
+
+That was the reason why I chose this topic and developed this web site.
+
+You can see an normal process of each of them at once.
+
+
+## How do I get started?
+
+
+It is very simple.
+1. Get into the same local internet connection with this raspberrypi server.
+2. Start a web browser.
+3. Type "raspberrypi.local" on the web browser.
+4. You would see main page.
+
+<img width="700" alt="스크린샷 2021-06-12 오후 4 05 24" src="https://user-images.githubusercontent.com/74919266/121768217-08eab880-cb98-11eb-9295-aa42b16fe3be.png">
+
+5. You can move by scrolling down or choosing menu bar on the left side. 
+
+<img width="700" alt="스크린샷 2021-06-12 오후 1 55 15" src="https://user-images.githubusercontent.com/74919266/121765447-d46e0100-cb85-11eb-82c4-98fab4a0a535.png">
+6. It will offer an animated GIF file and pseudocode.
+
+<img width="700" alt="스크린샷 2021-06-12 오후 1 56 51" src="https://user-images.githubusercontent.com/74919266/121765485-0d0dda80-cb86-11eb-9850-ea4c1a416955.png">
+7. Also, you can take simple quiz and then check the answer.
+
+<img width="700" alt="스크린샷 2021-06-12 오후 5 53 48" src="https://user-images.githubusercontent.com/74919266/121770924-34c16a80-cba7-11eb-9c97-a36ef0216df5.png">
+
+
+## Where can I get more help, if I need it?
+
+
+You can contact me via my email.
+
+Dahee Han : 21700765@handong.edu
+
+Thanks for visiting me ! 
+## VIDEO PRESENTATION LINK HERE!
+<br><a href = "https://www.youtube.com/watch?v=BiY8tvfTuVw">Youtube video link click here!</a></br>
+
+## References 
+* HTML template <https://www.w3schools.com/w3css/w3css_templates.asp>
+* GIF file <https://jinhyy.tistory.com/9>
+* GIF file <https://commons.wikimedia.org/wiki/File:Heap_sort_example.gif>
+* IMG file <https://brilliant.org/wiki/sorting-algorithms/>
+
